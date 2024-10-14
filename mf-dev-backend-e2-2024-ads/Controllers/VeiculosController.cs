@@ -1,9 +1,11 @@
 ﻿using mf_dev_backend_e2_2024_ads.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace mf_dev_backend_e2_2024_ads.Controllers
 {
+    [Authorize]
     public class VeiculosController : Controller
     {
         private readonly AppDbContext _context;
