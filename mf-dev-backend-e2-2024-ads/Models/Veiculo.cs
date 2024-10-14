@@ -25,5 +25,7 @@ namespace mf_dev_backend_e2_2024_ads.Models
         [Display(Name ="Ano do Modelo")]
 
         public int AnoModelo { get; set; }
+
+        public ICollection<Consumo> Consumos { get; set; }
     }
 }

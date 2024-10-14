@@ -15,7 +15,7 @@ namespace mf_dev_backend_e2_2024_ads.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index","Veiculos");
         }
 
         public IActionResult Privacy()
